@@ -27,7 +27,7 @@ Every run you'll get a raw json file and a consolidated csv file.
 Better to keep tracking your internet speed by running it indeterminately as a cron job. Edit your cron by running `crontab -e` and add the following:
 
 ```bash
-*/30 * * * * docker run --rm -ti -v /path/to/results:/app/results -v /etc/localtime:/etc/localtime:ro gandarez/speedtest
+*/30 * * * * docker run --rm -v /path/to/results:/app/results -v /etc/localtime:/etc/localtime:ro gandarez/speedtest
 ```
 
 ## Contributing
