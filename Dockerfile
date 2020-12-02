@@ -1,6 +1,6 @@
 FROM alpine:3
 
-ENV TAR_FILE="https://bintray.com/ookla/download/download_file?file_path=ookla-speedtest-1.0.0-i386-linux.tgz"
+ENV TAR_FILE="https://bintray.com/ookla/download/download_file?file_path=ookla-speedtest-1.0.0-armhf-linux.tgz"
 
 RUN apk add --update --no-cache \
     curl ca-certificates coreutils jq && \
