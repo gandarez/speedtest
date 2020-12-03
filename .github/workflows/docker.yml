@@ -2,7 +2,7 @@ name: build gandarez/speedtest image
 
 on:
   push:
-    branches: master
+    branches: [master]
 
 jobs:
   build:
@@ -26,3 +26,9 @@ jobs:
           push: true
           tags: gandarez/speedtest:latest
           platforms: linux/amd64,linux/arm64,linux/386,linux/arm/v7
+      - name: Update repo description
+        uses: peter-evans/dockerhub-description@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: gandarez/speedtest
