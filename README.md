@@ -4,7 +4,12 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/gandarez/speedtest.svg)](https://hub.docker.com/r/gandarez/speedtest/)
 [![ImageLayers](https://images.microbadger.com/badges/image/gandarez/speedtest.svg)](https://microbadger.com/#/images/gandarez/speedtest)
 
-sppedtest tests your internet connection using cli provided by Ookla.
+speedtest tests your internet connection using cli provided by Ookla.
+
+## Upstream Links
+
+* Docker Registry @ [gandarez/speedtest](https://hub.docker.com/r/gandarez/speedtest/)
+* GitHub @ [gandarez/speedtest](https://github.com/gandarez/speedtest)
 
 ## Quick Start
 
