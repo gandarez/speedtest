@@ -1,6 +1,6 @@
 FROM alpine:3
 
-LABEL MAINTAINER="Carlos Henrique Gandarez <gandarez@gmail.com>"
+LABEL MAINTAINER="Carlos Henrique Guardão Gandarez <gandarez@gmail.com>"
 
 ENV TAR_FILE="https://bintray.com/ookla/download/download_file?file_path=ookla-speedtest-1.0.0-armhf-linux.tgz"
 

@@ -10,7 +10,7 @@ CSV=$RESULTS_DIR/results.csv
 JSON=$RESULTS_DIR/$FILE.json
 
 if ! [ -f $CSV ]; then
-    echo "server name","server id","latency","jitter","packet loss","download","upload","download bytes","upload bytes","share url" > $CSV
+    echo "timestamp,server name,server id,latency,jitter,packet loss,download,upload,download bytes,upload bytes,share url" > $CSV
 fi
 
 if [ -z ${OOKLA_SERVER_ID+x} ]; then
@@ -22,4 +22,4 @@ fi
 # save it to raw json
 echo $RESULT | jq > $JSON
 # consolidate it to csv file
-echo $RESULT | jq -r '[.server.name,.server.id,.ping.latency,.ping.jitter,.packetLoss,.download.bandwidth,.upload.bandwidth,.download.bytes,.upload.bytes,.result.url] | @csv' >> $CSV
+echo $RESULT | jq -r '[.timestamp,.server.name,.server.id,.ping.latency,.ping.jitter,.packetLoss,.download.bandwidth,.upload.bandwidth,.download.bytes,.upload.bytes,.result.url] | @csv' >> $CSV
