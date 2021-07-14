@@ -2,7 +2,7 @@ FROM alpine:3
 
 LABEL MAINTAINER="Carlos Henrique Guardão Gandarez <gandarez@gmail.com>"
 
-ENV TAR_FILE="https://bintray.com/ookla/download/download_file?file_path=ookla-speedtest-1.0.0-armhf-linux.tgz"
+ENV TAR_FILE="https://install.speedtest.net/app/cli/ookla-speedtest-1.0.0-armhf-linux.tgz"
 
 RUN apk add --update --no-cache \
     curl ca-certificates coreutils jq && \
