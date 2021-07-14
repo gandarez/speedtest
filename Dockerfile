@@ -11,7 +11,6 @@ RUN apk add --update --no-cache \
     mv /ookla-speedtest/speedtest /usr/bin/speedtest && \
     chmod +x /usr/bin/speedtest && \
     rm -rf /ookla-speedtest && \
-    apk del curl && \
     rm -f /var/cache/apk/*
 
 WORKDIR /app

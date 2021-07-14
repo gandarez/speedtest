@@ -2,7 +2,6 @@
 
 [![Docker Stars](https://img.shields.io/docker/stars/gandarez/speedtest.svg)](https://hub.docker.com/r/gandarez/speedtest/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/gandarez/speedtest.svg)](https://hub.docker.com/r/gandarez/speedtest/)
-[![ImageLayers](https://images.microbadger.com/badges/image/gandarez/speedtest.svg)](https://microbadger.com/#/images/gandarez/speedtest)
 
 speedtest tests your internet connection using cli provided by Ookla.
 
@@ -26,6 +25,14 @@ docker run --rm -ti -e OOKLA_SERVER_ID=<id> -v `pwd`/results:/app/results gandar
 ```
 
 Every run you'll get a raw json file and a consolidated csv file.
+
+### IoTPlotter
+
+The script is prepared to push `ping`, `download` and `upload` bandwidth to the service. In the dashboard create three new graphs and call them as described here.
+
+```bash
+docker run --rm -ti -e FEED_ID=<id> -e API_KEY=<api_key> -v `pwd`/results:/app/results gandarez/speedtest
+```
 
 ## Cron Job
 
